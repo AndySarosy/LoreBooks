@@ -1,0 +1,21 @@
+<main class="shell">
+  <section class="hero">
+    <p class="eyebrow">LoreBooks</p>
+    <h1>Angular now owns the front end.</h1>
+    <p class="lede">
+      This Angular app is ready for static GitHub Pages deployment with a project base path of <code>/LoreBooks/</code>.
+    </p>
+
+    <div class="actions">
+      <a href="https://angular.dev" target="_blank" rel="noreferrer">Angular docs</a>
+      <span>Base path: /LoreBooks/</span>
+    </div>
+  </section>
+
+  <section class="cards" aria-label="Highlights">
+    <article class="card" *ngFor="let item of highlights">
+      <h2>{{ item.title }}</h2>
+      <p>{{ item.text }}</p>
+    </article>
+  </section>
+</main>
